@@ -1,0 +1,75 @@
+.breadcrumbs {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        font-family: Helvetica Neue, sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: .05em;
+        line-height: 20px;
+        color: hsl(0, 0%, 30%);
+        a {
+            display: block;
+            padding: 0 35px 0 0px;
+            color: map-get($gray-pallet, steel_grey);
+            height: 20px;
+            position: relative;
+            perspective: 700px;
+            .icon {
+                color: $theme-color;
+                font-size: 20px;
+            }
+            &.active {
+                color: $theme-color;
+            }
+            &:hover {
+                color: $theme-color;
+                text-decoration: underline;
+            }
+            &:after {
+                top: 0;
+                margin-top: 0.3em;
+                display: inline-block;
+                content: '';
+                width: 1em;
+                height: 1em;
+                border-color: map-get($gray-pallet, steel_grey);
+                border-style: solid;
+                border-width: 1px 1px 0 0;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                outline: 1px solid transparent;
+                position: absolute;
+                right: 20px;
+                -webkit-transition: all .15s ease;
+                -moz-transition: all .15s ease;
+                -ms-transition: all .15s ease;
+                transition: all .15s ease;
+                -webkit-transform: rotateZ(33deg) skew(-20deg, 0deg);
+                -moz-transform: rotateZ(33deg) skew(-20deg, 0deg);
+                -ms-transform: rotateZ(33deg) skew(-20deg, 0deg);
+                transform: rotateZ(33deg) skew(-20deg, 0deg);
+            }
+            &:hover:after {
+                right: 15px;
+                -webkit-transform: rotateZ(45deg) skew(-10deg, -10deg);
+                -moz-transform: rotateZ(45deg) skew(-10deg, -10deg);
+                -ms-transform: rotateZ(45deg) skew(-10deg, -10deg);
+                transform: rotateZ(45deg) skew(-10deg, -10deg);
+            }
+        }
+        &:last-child {
+            a {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+//Global Util functions & Mixins
+@import "utils/utils";
+
+//Global Settings file
+@import "settings";
+
+//Reset CSS
+// From the `normalize-scss` package
+@import "normalize";
+@include normalize(); 
+
+@import "global";
+
+@import "pages/index";
+ 
+@import "components/icons/main";
+@import "components/checkbox/main";
+@import "components/radio/main";
+@import "components/breadcrumb/main";
+@import "components/button/main";
+@import "components/accordion/main";
+@import "components/form/main";
+@import "components/table/main";

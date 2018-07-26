@@ -1,0 +1,10 @@
+dist: xenial
+language: node_js
+node_js:
+- node
+- 9.11.1
+
+# deploy:
+#   provider: gae
+#   keyfile: client-secret.json
+#   project: real-ignite

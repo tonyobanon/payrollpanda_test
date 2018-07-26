@@ -1,0 +1,105 @@
+.header-container {
+    padding: 1em 8em;
+    border-bottom: 1px solid black;
+    .app-title {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 18px;
+        .icon {
+            color: $theme-color;
+        }
+    }
+    .user-area {
+        float: right;
+        * {
+            display: inline-block;
+        }
+        .icon {
+            color: $theme-color;
+            font-size: 18px;
+        }
+    }
+}
+
+.breadcrumb-container {
+    padding: 0.5em 8em;
+}
+
+.title-container {
+    background: map-get($gray-pallet, light-grey);
+    padding: 2em 4em 2em 8.5em;
+    .item {
+        margin-right: 2em;
+        min-width: 3em;
+        display: inline-block;
+        .icon {
+            font-size: 40px;
+            color: map-get($gray-pallet, steel_grey);
+        }
+        .title-group {
+            float: right;
+            margin: 0 1em;
+            .title {
+                color: map-get($gray-pallet, steel_grey);
+            }
+            .title-lg {
+                color: darkslategray;
+                font-weight: bold;
+            }
+        }
+        &:last-child {
+            float: right;
+            .icon {
+                color: $theme-color;
+            }
+            .title-lg {
+                color: $theme-color;
+            }
+        }
+    }
+}
+
+.padded-container {
+    padding: 2em 4em;
+    max-width: 1200px;
+    margin: 0 auto;
+    >.title {
+        margin: 0.5em 0;
+        font-size: 28px;
+        font-weight: bold;
+    }
+}
+
+.table {
+    tbody {
+        tr {
+            td {
+                &:last-child {
+                    width: 100%;
+                    span {
+                        padding-left: 0.5em;
+                        color: map-get($gray-pallet, steel_grey);
+                        font-size: 13px;
+                        display: inline-block;
+                    }
+                    i {
+                        cursor: pointer;
+                        display: none;
+                        float: right;
+                    }
+                }
+            }
+            &:hover {
+                td i {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+
+.page-footer {
+    font-size: 12;
+    color: map-get($gray-pallet, steel_grey);
+    padding: 0.5em 9em 7em 9em;
+}

@@ -1,0 +1,30 @@
+.table {
+    vertical-align: top;
+    width: 100%;
+    overflow-x: auto; // optional - looks better for small cell values
+    white-space: nowrap;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: 14px;
+    tbody {
+        tr {
+            &:nth-child(even) {
+                background-color: map-get($gray-pallet, light-grey);
+            }
+            &:hover {
+                background-color: #C2F0C6;
+            }
+        }
+    }
+    th {
+        text-align: left;
+        background: #388C00;
+        color: white;
+    }
+    th {
+        padding: 1.5em 1.75em;
+    }
+    td {
+        padding: 1em 1.75em;
+    }
+}

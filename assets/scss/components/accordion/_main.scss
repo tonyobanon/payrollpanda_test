@@ -1,0 +1,58 @@
+.accordion {
+    border: 1px solid darken($white, 25%);
+    border-radius: 0.5em;
+    padding: 0;
+    list-style: none;
+    overflow: auto;
+    .body {
+        border-top: 1px solid darken($white, 25%);
+        background-color: $white;
+        display: none;
+    }
+    .visible {
+        .body {
+            display: block;
+        }
+    }
+    .header {
+        background-color: map-get($gray-pallet, light-grey);
+        position: relative;
+        padding: 1em;
+        color: black;
+        &:hover {
+            cursor: pointer;
+        }
+        .name {
+            float: left;
+            font-weight: bold;
+            color: darkslategray;
+        }
+        .ic {
+            color: $theme-color;
+            min-width: fit-content;
+            float: right;
+            * {
+                display: none;
+                &.visible {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .body {
+        * {
+            display: inline-block;
+        }
+        .text {
+            margin: 1.5em 1em;
+            float: left;
+            color: darkslategray;
+            i {
+                margin: 0 14px 14px 0;
+                float: left;
+                font-size: 6em;
+                color: map-get($gray-pallet, steel_grey);
+            }
+        }
+    }
+}

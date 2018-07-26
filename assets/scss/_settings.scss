@@ -1,0 +1,41 @@
+//1. Colors
+//2. Globals
+//3. Header
+//4. misc
+
+//1. Colors
+$client-pallet: (
+    blue: #004f8c,
+    blue-shade: #004483,
+    orange: #e38b23,
+    skyblue: #4a90e2,
+    light-orange: #e38b23,
+    tone-ash: #7f8182,
+    tone-orange: #ffefde,
+    dark-red: #c81600,
+    tone-red: #ffdfdf,
+    dark-green: #4e8c2a,
+    light-green: #f3ffeb,
+    midnight-blue: #476382
+);
+
+$gray-pallet: (
+    steel_grey: #7f8182,
+    light-grey: #edf0f2,
+    brownish_grey: #5e5e5e
+);
+
+$white: #ffffff;
+$black: #000000;
+
+//2. Globals
+$global-font-size: 100%;
+
+//2.1 Body styles
+$body-font-size: $global-font-size;
+$body-font-color: #1c1d1f;
+$body-font-family: 'roboto', 'Helvetica Neue', 'open sans', sans-serif;
+//$body-background-color: #f2f7fc;
+$body-background-color: white;
+
+$theme-color: #388C00;

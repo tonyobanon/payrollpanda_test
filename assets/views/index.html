@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <title> Payroll Panda </title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+    <div class="header-container">
+        <span class="app-title">
+            <i class="icon fa-bars">&#xf0c9;</i> Dummy App </span>
+        <div class="user-area">
+            <i class="icon fa-user">&#xe800;</i>
+            <span>John</span>
+            <i>&#124;</i>
+            <a href="/">Log out</a>
+        </div>
+    </div>
+
+
+    <div class="breadcrumb-container">
+        <ul class="breadcrumbs">
+            <li>
+                <a>
+                    <i class="icon fa-home">&#xe801;</i>
+                </a>
+            </li>
+            <li>
+                <a href="#" class="active">Page 1</a>
+            </li>
+            <li>
+                <a href="#">Breadcrumb</a>
+            </li>
+            <li>
+                <a href="#">Current page</a>
+            </li>
+        </ul>
+    </div>
+
+
+    <div class="title-container">
+
+        <div class="item">
+            <i class="icon fa-puzzle-piece">&#xf12e;</i>
+            <div class="title-group">
+                <div class="title">Sector</div>
+                <div class="title-lg">Sports</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <i class="icon fa-futbol-o">&#xf1e3;</i>
+            <div class="title-group">
+                <div class="title">Sport Type</div>
+                <div class="title-lg">Bicycles</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <i class="icon fa-bicyble">&#xf206;</i>
+            <div class="title-group">
+                <div class="title">Mode</div>
+                <div class="title-lg">Mountain Cross</div>
+            </div>
+        </div>
+
+        <div class="item">
+            <i class="icon fa-recycle">&#xf1b8;</i>
+            <div class="title-group">
+                <div class="title">Responsibility</div>
+                <div class="title-lg">Be Green</div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="padded-container help">
+        <ul class="accordion">
+            <li>
+                <div class="header">
+                    <span class="name">Help</span>
+                    <span class="ic">
+                        <span>close</span>
+                        <span class="visible">open</span>
+                        <i>&#8593;</i>
+                        <i class="visible">&#8595;</i>
+                    </span>
+                </div>
+
+                <div class="body">
+                    <div class="ic"></div>
+                    <div class="text">
+                        <i class="icon fa-life-ring">&#xf1cd;</i>
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                        consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna.
+                        <br>
+                        <br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        <br>
+                        <br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                        est laborum. Excepteur sint occaecat cupidatat, sunt in culpa qui laborum.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="padded-container">
+
+        <div class="title">User registration</div>
+
+        <form>
+
+            <div class="form-group">
+                <div class="title">Full name</div>
+                <div class="input-control">
+                    <input id="biker-name">
+                </div>
+                <div class="footer">Enter your full name</div>
+            </div>
+
+            <div class="form-group">
+                <div class="title">Email</div>
+                <div class="input-control">
+                    <input id="biker-email">
+                </div>
+                <div class="footer">Enter your email</div>
+            </div>
+
+            <div class="form-group">
+                <div class="title">City</div>
+                <span class="helper-text">optional</span>
+                <div class="input-control">
+                    <input id="biker-city">
+                </div>
+                <div class="footer">Enter your city</div>
+            </div>
+
+            <div class="form-group">
+                <div class="title">Ride in group?</div>
+                <div class="form-control">
+                    <input type="radio" id="always-group-ride" name="biker-group-ride" value="Always">
+                    <label for="always-group-ride">Always</label>
+
+                    <input type="radio" id="sometimes-group-ride" name="biker-group-ride" value="Sometimes">
+                    <label for="sometimes-group-ride">Sometimes</label>
+
+                    <input type="radio" id="never-group-ride" name="biker-group-ride" value="Never">
+                    <label for="never-group-ride">Never</label>
+                </div>
+                <div class="footer">Specify if you ride in a group</div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="title">Days of the week</div>
+                <div class="form-control">
+                    <input type="checkbox" id="sun-weekday" name="biker-days" value="Sun">
+                    <label for="sun-weekday">Sun</label>
+                    <input type="checkbox" id="mon-weekday" name="biker-days" value="Mon">
+                    <label for="mon-weekday">Mon</label>
+                    <input type="checkbox" id="tue-weekday" name="biker-days" value="Tue">
+                    <label for="tue-weekday">Tue</label>
+                    <input type="checkbox" id="wed-weekday" name="biker-days" value="Wed">
+                    <label for="wed-weekday">Wed</label>
+                    <input type="checkbox" id="thur-weekday" name="biker-days" value="Thur">
+                    <label for="thur-weekday">Thur</label>
+                    <input type="checkbox" id="fri-weekday" name="biker-days" value="Fri">
+                    <label for="fri-weekday">Fri</label>
+                    <input type="checkbox" id="sat-weekday" name="biker-days" value="Sat">
+                    <label for="sat-weekday">Sat</label>
+                </div>
+                <div class="footer">What days are you available?</div>
+            </div>
+
+            <div class="action-buttons">
+                <a id="biker-form-save-btn" target="_blank" class="button save right">
+                    <span>Save</span>
+                </a>
+                <a class="button cancel right">
+                    <span>Cancel</span>
+                </a>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="padded-container">
+        <div class="title">Bikers</div>
+
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Full name</th>
+                    <th>E-mail</th>
+                    <th>City</td>
+                        <th>Ride in group</th>
+                        <th>Days of the week</th>
+                        <th>Registration day</th>
+                </tr>
+            </thead>
+            <tbody id="bikers-table-body">
+                <tr id="1111">
+                    <td>James Isaac Newton</td>
+                    <td>newton@example.com</td>
+                    <td>City</td>
+                    <td>Always</td>
+                    <td>Everyday</td>
+                    <td>13/06/2018 <span>01:07PM</span>
+                        <i class="icon fa-trash-o">&#xe802;</i>
+                    </td>
+                </tr>
+                <tr id="2222">
+                    <td>James Isaac Newton</td>
+                    <td>newton@example.com</td>
+                    <td>City</td>
+                    <td>Always</td>
+                    <td>Everyday</td>
+                    <td>13/06/2018 <span>01:07PM</span>
+                        <i class="icon fa-trash-o">&#xe802;</i>
+                    </td>
+                </tr>
+                <tr id="3333">
+                    <td>James Isaac Newton</td>
+                    <td>newton@example.com</td>
+                    <td>City</td>
+                    <td>Always</td>
+                    <td>Everyday</td>
+                    <td>13/06/2018 <span>01:07PM</span>
+                        <i class="icon fa-trash-o">&#xe802;</i>
+                    </td>
+                </tr>
+                <tr id="4444">
+                    <td>James Isaac Newton</td>
+                    <td>newton@example.com</td>
+                    <td>City</td>
+                    <td>Always</td>
+                    <td>Everyday</td>
+                    <td>13/06/2018 <span>01:07PM</span>
+                        <i class="icon fa-trash-o">&#xe802;</i>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <br>
+    <hr>
+    <div class="page-footer">
+        <div class="left">Dummp App</div>
+        <div class="right">Version 1.14</div>
+    </div>
+
+    <script src="js/main.min.js" type="text/javascript"></script>
+</body>
+</html>

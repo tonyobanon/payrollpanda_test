@@ -1,0 +1,46 @@
+input[type="checkbox"] {
+    display: none;
+    +label {
+        display: inline-block;
+        cursor: pointer;
+        margin-right: 0.7em;
+        &:before {
+            content: "\2714";
+            border: 0.1em solid darken($white, 25%);
+            border-radius: 0.2em;
+            display: inline-block;
+            width: 1em;
+            height: 1em;
+            padding: 0.1em 0.1em 0.2em 0.2em;
+            margin-right: 0.5em;
+            vertical-align: bottom;
+            color: transparent;
+            transition: .2s;
+        }
+        &:active {
+            &:before {
+                transform: scale(0);
+            }
+        }
+        &:hover {
+            &:before {
+                border-color: $theme-color;
+            }
+        }
+    }
+    &:checked {
+        +label {
+            &:before {
+                color: darkslategray;
+                border-color: $theme-color;
+            }
+        }
+    }
+    +label {
+        &:empty {
+            &:before {
+                margin-right: 0;
+            }
+        }
+    }
+}
