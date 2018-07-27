@@ -8,5 +8,5 @@ before_install:
 deploy:
    provider: gae
    keyfile: client-secret.json
-   project: ri-app
+   project: ri-app-1
 
