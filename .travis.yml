@@ -4,7 +4,11 @@ node_js:
 - node
 - 9.11.1
 
-# deploy:
-#   provider: gae
-#   keyfile: client-secret.json
-#   project: real-ignite
+ deploy:
+   provider: gae
+   keyfile: service-account.json
+   project: ri-app
+
+ before_install:
+   - openssl aes-256-cbc -K $encrypted_5880cf525281_key -iv $encrypted_5880cf525281_iv -in secrets.tar.enc -out secrets.tar -d
+   - tar xvf secrets.tar
