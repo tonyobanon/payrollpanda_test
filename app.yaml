@@ -2,3 +2,4 @@ env: flex
 runtime: nodejs
 network:
    name: default-2
+   subnetwork_name: subnet-1
