@@ -5,8 +5,8 @@
   "repository": "https://github.com/tonyobanon/payrollpanda_test",
   "license": "Apache-2.0",
   "scripts": {
-    "start": "gulp dist && node server.js",
-    "test": "jest __tests__/unit --coverage",
+    "start": "NODE_PATH=. gulp dist && node server.js",
+    "test": "NODE_PATH=. jest __tests__/unit --coverage",
     "gulp-dist": "gulp dist",
     "gulp-dev": "gulp dev",
     "lint": "eslint . && sass-lint -v"
@@ -32,6 +32,8 @@
     "jest": "22.4.3",
     "nodemon": "1.17.4",
     "sass-lint": "1.12.1",
-    "sass-lint-auto-fix": "^0.7.1"
+    "sass-lint-auto-fix": "^0.7.1",
+    "joi": "13.4.0",
+    "supertest": "3.1.0"
   }
 }
