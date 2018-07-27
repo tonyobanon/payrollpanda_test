@@ -4,5 +4,4 @@
 /public
 node_modules
 *.log
-package-lock.json
-service-account.json
+client-secret.json
